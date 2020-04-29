@@ -1,0 +1,62 @@
+:root {
+  --foodie-orange: #f95b29;
+  font-size: 12px;
+}
+.text-box {
+  display: block;
+  padding: 0.5rem 1rem;
+  outline: none;
+}
+
+.searchbar-grid {
+  padding: 1rem;
+}
+
+.search-bar {
+  width: 400px;
+  border-radius: 0.2rem;
+  padding: 1rem;
+  border: 1px solid var(--foodie-orange);
+}
+
+.form-prompt {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.app-button {
+  cursor: pointer;
+  display: block;
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+  border: 0;
+}
+.text-foodie {
+  color: var(--foodie-orange);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.bg-foodie {
+  background-color: var(--foodie-orange);
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-land-film {
+  background-color: rgba(41, 15, 5, 0.29);
+}
+
+.bg-foodie-img {
+  background-image: url("./assets/images/foodie-bg.jpg");
+  background-size: contain;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: 300px auto 200px;
+}

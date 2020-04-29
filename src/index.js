@@ -2,12 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 // import App from './App';
+import "./bootstrap-grid.css";
 import * as serviceWorker from "./serviceWorker";
-import TodoApp from "./apps/todo/TodoApp";
+import MasterRouter from "./apps/master-router/master-router";
 
 ReactDOM.render(
   <React.StrictMode>
-    <TodoApp />
+    <MasterRouter />
   </React.StrictMode>,
   document.getElementById("root")
 );

@@ -1,19 +1,23 @@
 import React, { useState } from "react";
 import "./TodoApp.css";
 
-const Todo = ({ todo, index, completeTodo, removeTodo }) => {
+export const Todo = ({ todo, index, completeTodo, removeTodo }) => {
   return (
     <div style={{ textDecoration: todo.isCompleted ? "line-through" : "none" }} className="todo">
       {todo.text}
       <div>
-        <button onClick={() => completeTodo(index)}>{todo.isCompleted ? "Uncheck" : "Check"}</button>
-        <button onClick={() => removeTodo(index)}>x</button>
+        <button className="button bg-purp text-white" data-test-id="complete-button" onClick={() => completeTodo(index)}>
+          {todo.isCompleted ? "Uncheck" : "Check"}
+        </button>
+        <button className="button bg-red text-white" data-test-id="remove-button" onClick={() => removeTodo(index)}>
+          x
+        </button>
       </div>
     </div>
   );
 };
 
-const TodoForm = ({ addTodo }) => {
+export const TodoForm = ({ addTodo }) => {
   const [value, setValue] = useState("");
 
   const handleSubmit = (e) => {
