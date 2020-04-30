@@ -1,16 +1,18 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, useRouteMatch } from "react-router-dom";
 import "./foodie.css";
 import Home from "./components/home";
 import Landing from "./components/landing";
 
 const Foodie = () => {
+  const { path } = useRouteMatch();
+
   return (
     <div>
       <Router>
         <Switch>
-          <Route path="/foodie/" exact={true} component={Landing} />
-          <Route path="/foodie/home" component={Home} />
+          <Route path={path} exact component={Landing} />
+          <Route path={`${path}/home`} component={Home} />
         </Switch>
       </Router>
     </div>

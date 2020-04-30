@@ -9,7 +9,7 @@ export const Todo = ({ todo, index, completeTodo, removeTodo }) => {
         <button className="button bg-purp text-white" data-test-id="complete-button" onClick={() => completeTodo(index)}>
           {todo.isCompleted ? "Uncheck" : "Check"}
         </button>
-        <button className="button bg-red text-white" data-test-id="remove-button" onClick={() => removeTodo(index)}>
+        <button className="button bg-red text-white " data-test-id="remove-button" onClick={() => removeTodo(index)}>
           x
         </button>
       </div>

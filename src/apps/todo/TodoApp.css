@@ -3,6 +3,14 @@ body {
   margin: 0;
 }
 
+.bg-purp {
+  background: #3c0f8a;
+}
+
+.bg-red {
+  background: red;
+}
+
 .todo-app {
   background: #3c0f8a;
   padding: 30px;
@@ -42,4 +50,11 @@ body {
   height: 2.5rem;
   border-radius: 4px;
   outline: none;
+}
+
+.button {
+  cursor: pointer;
+  padding: 2px 8px;
+  border-radius: 0.5px;
+  border: 0;
 }

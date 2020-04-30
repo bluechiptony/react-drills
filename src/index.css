@@ -97,3 +97,8 @@ input:focus {
   font-size: 0.8em;
   color: #c90909;
 }
+
+.y-padding {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
